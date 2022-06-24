@@ -1,7 +1,9 @@
 const { connect } = require("getstream");
 const bcrypt = require("bcrypt");
-const StreamChat = require("stream-chat");
+const StreamChat = require("stream-chat").StreamChat;
 const crypto = require("crypto");
+
+require("dotenv").config();
 
 const api_key = process.env.STREAM_API_KEY;
 const api_secret = process.env.STREAM_API_SECRET;
@@ -15,7 +17,7 @@ const signup = async (req, res) => {
 
     const serverClient = connect(api_key, api_secret, app_id);
 
-    const hashedPassword = await bcrypto.hash(password, 10);
+    const hashedPassword = await bcrypt.hash(password, 10);
 
     const token = serverClient.createUserToken(userId);
 
