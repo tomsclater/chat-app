@@ -296,6 +296,7 @@ body {
 .channel__container {
   height: 100%;
   width: 100%;
+  background: #d8e8f2;
 }
 
 .str-chat__thread {
