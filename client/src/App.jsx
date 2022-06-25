@@ -43,6 +43,7 @@ const App = () => {
           isCreating={isCreating}
           setIsCreating={setIsCreating}
           setCreateType={setCreateType}
+          isEditing={isEditing}
           setIsEditing={setIsEditing}
         />
         <ChannelContainer
