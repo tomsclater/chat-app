@@ -43,6 +43,7 @@ const CreateChannel = ({ createType, setIsCreating }) => {
           setChannelName={setChannelName}
         />
       )}
+      <UserList />
     </div>
   );
 };
