@@ -77,7 +77,6 @@ const ChannelListContainer = ({
             <TeamChannelList
               {...listProps}
               type="messaging"
-              type="team"
               isCreating={isCreating}
               setIsCreating={setIsCreating}
               setCreateType={setCreateType}
