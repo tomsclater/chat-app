@@ -68,11 +68,11 @@ const TeamChannelHeader = ({ setIsEditing }) => {
             <div key={i} className="team-channel-header__name-multi">
               <Avatar
                 image={user.image}
-                name={user.fullName || user.id}
+                name={user.name || user.first_name}
                 size={32}
               />
               <p className="team-channel-header__name user">
-                {user.fullName || user.id}
+                {user.name || user.first_name}
               </p>
             </div>
           ))}
